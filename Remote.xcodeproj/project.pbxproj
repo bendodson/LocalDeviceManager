@@ -11,18 +11,39 @@
 		2BE6648C2A09130700E83244 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE6648B2A09130700E83244 /* ContentView.swift */; };
 		2BE6648E2A09130800E83244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE6648D2A09130800E83244 /* Assets.xcassets */; };
 		2BE664912A09130800E83244 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE664902A09130800E83244 /* Preview Assets.xcassets */; };
+		2BE664992A09147B00E83244 /* LocalDeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE664982A09147B00E83244 /* LocalDeviceManager.swift */; };
+		2BE664A12A0917F300E83244 /* RemotePhoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE664A02A0917F300E83244 /* RemotePhoneApp.swift */; };
+		2BE664A32A0917F300E83244 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE664A22A0917F300E83244 /* ContentView.swift */; };
+		2BE664A52A0917F500E83244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE664A42A0917F500E83244 /* Assets.xcassets */; };
+		2BE664A82A0917F500E83244 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE664A72A0917F500E83244 /* Preview Assets.xcassets */; };
+		2BE664AC2A09182600E83244 /* LocalDeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE664982A09147B00E83244 /* LocalDeviceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2BE664862A09130700E83244 /* Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BAB82F02A091ACC0038B2DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2BE664862A09130700E83244 /* RemoteTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE664892A09130700E83244 /* RemoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteApp.swift; sourceTree = "<group>"; };
 		2BE6648B2A09130700E83244 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2BE6648D2A09130800E83244 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BE664902A09130800E83244 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2BE664972A09133500E83244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2BE664982A09147B00E83244 /* LocalDeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDeviceManager.swift; sourceTree = "<group>"; };
+		2BE6649E2A0917F300E83244 /* RemotePhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemotePhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BE664A02A0917F300E83244 /* RemotePhoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePhoneApp.swift; sourceTree = "<group>"; };
+		2BE664A22A0917F300E83244 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2BE664A42A0917F500E83244 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BE664A72A0917F500E83244 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2BE664832A09130700E83244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BE6649B2A0917F300E83244 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,7 +56,9 @@
 		2BE6647D2A09130700E83244 = {
 			isa = PBXGroup;
 			children = (
-				2BE664882A09130700E83244 /* Remote */,
+				2BE664982A09147B00E83244 /* LocalDeviceManager.swift */,
+				2BE664882A09130700E83244 /* RemoteTV */,
+				2BE6649F2A0917F300E83244 /* RemotePhone */,
 				2BE664872A09130700E83244 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +66,22 @@
 		2BE664872A09130700E83244 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2BE664862A09130700E83244 /* Remote.app */,
+				2BE664862A09130700E83244 /* RemoteTV.app */,
+				2BE6649E2A0917F300E83244 /* RemotePhone.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2BE664882A09130700E83244 /* Remote */ = {
+		2BE664882A09130700E83244 /* RemoteTV */ = {
 			isa = PBXGroup;
 			children = (
+				2BE664972A09133500E83244 /* Info.plist */,
 				2BE664892A09130700E83244 /* RemoteApp.swift */,
 				2BE6648B2A09130700E83244 /* ContentView.swift */,
 				2BE6648D2A09130800E83244 /* Assets.xcassets */,
 				2BE6648F2A09130800E83244 /* Preview Content */,
 			);
-			path = Remote;
+			path = RemoteTV;
 			sourceTree = "<group>";
 		};
 		2BE6648F2A09130800E83244 /* Preview Content */ = {
@@ -67,12 +92,32 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2BE6649F2A0917F300E83244 /* RemotePhone */ = {
+			isa = PBXGroup;
+			children = (
+				2BAB82F02A091ACC0038B2DD /* Info.plist */,
+				2BE664A02A0917F300E83244 /* RemotePhoneApp.swift */,
+				2BE664A22A0917F300E83244 /* ContentView.swift */,
+				2BE664A42A0917F500E83244 /* Assets.xcassets */,
+				2BE664A62A0917F500E83244 /* Preview Content */,
+			);
+			path = RemotePhone;
+			sourceTree = "<group>";
+		};
+		2BE664A62A0917F500E83244 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2BE664A72A0917F500E83244 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2BE664852A09130700E83244 /* Remote */ = {
+		2BE664852A09130700E83244 /* RemoteTV */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BE664942A09130800E83244 /* Build configuration list for PBXNativeTarget "Remote" */;
+			buildConfigurationList = 2BE664942A09130800E83244 /* Build configuration list for PBXNativeTarget "RemoteTV" */;
 			buildPhases = (
 				2BE664822A09130700E83244 /* Sources */,
 				2BE664832A09130700E83244 /* Frameworks */,
@@ -82,9 +127,26 @@
 			);
 			dependencies = (
 			);
-			name = Remote;
+			name = RemoteTV;
 			productName = Remote;
-			productReference = 2BE664862A09130700E83244 /* Remote.app */;
+			productReference = 2BE664862A09130700E83244 /* RemoteTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BE6649D2A0917F300E83244 /* RemotePhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BE664A92A0917F500E83244 /* Build configuration list for PBXNativeTarget "RemotePhone" */;
+			buildPhases = (
+				2BE6649A2A0917F300E83244 /* Sources */,
+				2BE6649B2A0917F300E83244 /* Frameworks */,
+				2BE6649C2A0917F300E83244 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemotePhone;
+			productName = RemotePhone;
+			productReference = 2BE6649E2A0917F300E83244 /* RemotePhone.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -98,6 +160,9 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					2BE664852A09130700E83244 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					2BE6649D2A0917F300E83244 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
@@ -115,7 +180,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2BE664852A09130700E83244 /* Remote */,
+				2BE664852A09130700E83244 /* RemoteTV */,
+				2BE6649D2A0917F300E83244 /* RemotePhone */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +196,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2BE6649C2A0917F300E83244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BE664A82A0917F500E83244 /* Preview Assets.xcassets in Resources */,
+				2BE664A52A0917F500E83244 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,6 +214,17 @@
 			files = (
 				2BE6648C2A09130700E83244 /* ContentView.swift in Sources */,
 				2BE6648A2A09130700E83244 /* RemoteApp.swift in Sources */,
+				2BE664992A09147B00E83244 /* LocalDeviceManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BE6649A2A0917F300E83244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BE664A32A0917F300E83244 /* ContentView.swift in Sources */,
+				2BE664A12A0917F300E83244 /* RemotePhoneApp.swift in Sources */,
+				2BE664AC2A09182600E83244 /* LocalDeviceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,10 +352,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Remote/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RemoteTV/Preview Content\"";
 				DEVELOPMENT_TEAM = 7V89NHL866;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RemoteTV/Info.plist;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -277,7 +364,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.dodoapps.Remote;
+				PRODUCT_BUNDLE_IDENTIFIER = io.dodoapps.remote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -292,10 +379,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Remote/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RemoteTV/Preview Content\"";
 				DEVELOPMENT_TEAM = 7V89NHL866;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RemoteTV/Info.plist;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -303,11 +391,81 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.dodoapps.Remote;
+				PRODUCT_BUNDLE_IDENTIFIER = io.dodoapps.remote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		2BE664AA2A0917F500E83244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RemotePhone/Preview Content\"";
+				DEVELOPMENT_TEAM = 7V89NHL866;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RemotePhone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.dodoapps.remote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2BE664AB2A0917F500E83244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RemotePhone/Preview Content\"";
+				DEVELOPMENT_TEAM = 7V89NHL866;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RemotePhone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.dodoapps.remote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -323,11 +481,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2BE664942A09130800E83244 /* Build configuration list for PBXNativeTarget "Remote" */ = {
+		2BE664942A09130800E83244 /* Build configuration list for PBXNativeTarget "RemoteTV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BE664952A09130800E83244 /* Debug */,
 				2BE664962A09130800E83244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BE664A92A0917F500E83244 /* Build configuration list for PBXNativeTarget "RemotePhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BE664AA2A0917F500E83244 /* Debug */,
+				2BE664AB2A0917F500E83244 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
